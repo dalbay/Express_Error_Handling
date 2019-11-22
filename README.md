@@ -59,3 +59,6 @@ Test the application in Postman - we should get a JSON error message back:
 <br/>
 
 ## Implementing a Global Error Handling Middleware
+- the goal is to handle all errors in one central middleware; even the error messages (404) that we send back to the users.
+- Express comes with middleware handleres out of the box.
+- to define an error handling middleware all we need to do is to give the middleware functions 4 arguments, and Express will recongnize it as a error handling middleware, and therefore call it only when there is an error. 
